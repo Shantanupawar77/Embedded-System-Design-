@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\objects\startup.o"
+".\objects\seven_segment_interfacing.o"
+--strict --scatter ".\Objects\seven_segment_interfacing.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\seven_segment_interfacing.map" -o .\Objects\seven_segment_interfacing.axf
